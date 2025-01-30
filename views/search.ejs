@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Train Search Results</title>
+</head>
+<body>
+  <header>
+    <h1>Train Search Results</h1>
+  </header>
+
+  <main>
+    <!-- Results Section -->
+    <div id="results-section">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Train Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Departure Time</th>
+            <th>Arrival Time</th>
+            <th>Class</th>
+            <th>Availability</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Express 101</td>
+            <td>City A</td>
+            <td>City B</td>
+            <td>08:00 AM</td>
+            <td>12:00 PM</td>
+            <td>AC</td>
+            <td class="available">Seats Available (10)</td>
+            <td><a href="#" class="book-now-button">Book Now</a></td>
+          </tr>
+          <tr>
+            <td>Express 202</td>
+            <td>City C</td>
+            <td>City D</td>
+            <td>10:00 AM</td>
+            <td>03:00 PM</td>
+            <td>Sleeper</td>
+            <td class="waitlist">Waitlist</td>
+            <td><button class="disabled-button" disabled>Waitlist</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Message for No Results -->
+    <div id="no-results" style="display: none;">
+      <p class="no-results">No trains found for the given search criteria. Please try again with different inputs.</p>
+    </div>
+
+    <!-- Back to Home Link -->
+    <div class="back-to-home">
+      <a href="index.html" class="back-link">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Railway Reservation System</p>
+  </footer>
+</body>
+</html>

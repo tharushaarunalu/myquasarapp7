@@ -1,0 +1,47 @@
+srilanka-railway/
+├── app.js                // Main application file
+├── routes/
+│   ├── index.js          // Home page routes
+│   ├── train.js          // Train information routes
+│   ├── booking.js        // Booking routes
+│   ├── user.js           // User management routes
+├── views/
+│   ├── index.ejs         // Home page template
+│   ├── train.ejs         // Train information template
+│   ├── booking.ejs       // Booking form template
+│   ├── user.ejs          // User registration/login template
+├── public/
+│   ├── stylesheets/
+│   │   └── style.css     // CSS styles
+│   ├── images/
+│   │   └── logo.png      // Placeholder for images
+│   └── javascripts/
+│       └── script.js     // Client-side interactions
+├── models/
+│   ├── Train.js          // Train data model
+│   ├── User.js           // User data model
+├── database/
+│   └── db.js             // Database connection file
+└── package.json          // Dependencies and scripts
+
+
+project/
+├── app.js
+├── models/
+│   ├── admin.js
+│   ├── booking.js
+│   └── schedule.js
+├── views/
+│   ├── dashboard.ejs
+│   ├── login.ejs
+│   ├── user_management.ejs
+│   ├── schedule_management.ejs
+│   ├── bookings.ejs
+│   └── reports.ejs
+├── public/
+│   └── css/
+│       └── styles.css
+├── package.json
+├── .env
+└── README.md
+

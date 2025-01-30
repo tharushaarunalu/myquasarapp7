@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="<%= language %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Railways</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="path/to/logo.png" alt="Sri Lanka Railways Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Our Services</a></li>
+                <li><a href="/downloads">Downloads</a></li>
+                <li><a href="/procurement">Procurement Notices</a></li>
+                <li><a href="/departmental">Departmental Notices</a></li>
+                <li><a href="/commercial">Commercial Notices</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/rti">RTI</a></li>
+                <li><a href="/pravesha">Pravesha.lk</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2><%= language === 'en' ? 'Important Links' : (language === 'si' ? ' වැදගත් සබැඳි' : 'முக்கிய இணைப்புகள்') %></h2>
+            <ul>
+                <li><a href="http://www.transport.gov.lk"><%= language === 'en' ? 'Ministry of Transport' : (language === 'si' ? 'පාරිභෝගික අමාත්‍යංශය' : 'போக்குவரத்து அமைச்சகம்') %></a></li>
+                <li><a href="http://www.ctb.lk"><%= language === 'en' ? 'CTB Sri Lanka' : (language === 'si' ? 'සිටීබී ශ්‍රී ලංකා' : 'சிடிபி இலங்கை') %></a></li>
+                <li><a href="http://www.srilankan.com"><%= language === 'en' ? 'Sri Lankan Airlines' : (language === 'si' ? 'ශ්‍රී ලංකා விமான පරිනිවිට' : 'இலங்கை விமானப் பயணங்கள்') %></a></li>
+                <li><a href="http://www.gic.gov.lk"><%= language === 'en' ? 'GIC' : (language === 'si' ? 'ජනතා පසුබැසීම' : 'ஜனநாயக செல்வாக்கு') %></a></li>
+            </ul>
+        </aside>
+        <section class="main-content">
+            <div class="banner">
+                <img src="path/to/banner.jpg" alt="SLT Mobitel E-Ticket & E-Warrant">
+                <a href="/e-ticket">Read more...</a>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <a href="/train-schedule"><%= language === 'en' ? 'Train Schedule' : (language === 'si' ? 'දුම්රිය කාලසටහන' : 'ரயில் அட்டவணை') %></a>
+                </div>
+                <!-- Add more links similarly -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="weather">
+            <p>82°F</p>
+            <p>Light rain</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </footer>
+</body>
+</html>

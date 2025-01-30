@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking Page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .hero-section {
+      background-image: url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .form-section {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .seat-map img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="bg-dark text-white py-3">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 class="h4 mb-0">Sri Lankan Railways</h1>
+      <nav>
+        <a href="#" class="text-white me-3">Home</a>
+        <a href="#" class="text-white me-3">Schedules</a>
+        <a href="#" class="text-white me-3">Book Tickets</a>
+        <a href="#" class="text-white">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="hero-section">
+  <h1>Explore Sri Lanka by Rail</h1>
+  <p class="lead">Book your train tickets effortlessly and explore the beauty of Sri Lanka.</p>
+  <a href="#booking-section" class="btn btn-warning btn-lg">Start Booking</a>
+</div>
+
+<section id="booking-section" class="container my-5">
+  <h2 class="text-center mb-4">Book Your Ticket</h2>
+  <div class="row">
+    <div class="col-md-6 form-section">
+      <form>
+        <div class="mb-3">
+          <label for="origin" class="form-label">Origin</label>
+          <select id="origin" class="form-select">
+            <option>Select Origin</option>
+            <option>Colombo</option>
+            <option>Kandy</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination</label>
+          <select id="destination" class="form-select">
+            <option>Select Destination</option>
+            <option>Galle</option>
+            <option>Jaffna</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Travel Date</label>
+          <input type="date" id="date" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="class" class="form-label">Class</label>
+          <select id="class" class="form-select">
+            <option>Select Class</option>
+            <option>Economy</option>
+            <option>Business</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Check Availability</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h3>Interactive Seat Map</h3>
+      <div class="seat-map">
+        <img src="https://via.placeholder.com/500x300" alt="Seat Map">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-section" class="bg-light py-5">
+  <div class="container text-center">
+    <h2>About Sri Lankan Railways</h2>
+    <p>Sri Lankan Railways has been serving the nation since 1858, connecting people and places with scenic and reliable train journeys.</p>
+    <img src="https://via.placeholder.com/800x400" class="img-fluid rounded" alt="Sri Lankan Train">
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Sri Lankan Railways | All Rights Reserved</p>
+  <p>Contact us: +94 123 4567 | info@srilankanrailways.lk</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

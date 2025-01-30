@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Header Section -->
+    <div class="bg-primary text-white p-3 text-center mb-4">
+      <h1 class="mb-0">Admin Dashboard</h1>
+    </div>
+
+    <div class="row">
+      <!-- Sidebar Navigation -->
+      <nav class="col-md-3 col-lg-2 bg-light sidebar py-3 border-end">
+        <h5 class="text-center text-secondary">Menu</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="/admin/users" class="nav-link text-dark">
+              <i class="bi bi-people-fill"></i> Manage Users
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/bookings" class="nav-link text-dark">
+              <i class="bi bi-calendar-check-fill"></i> Manage Bookings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/reports" class="nav-link text-dark">
+              <i class="bi bi-bar-chart-line-fill"></i> Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/logout" class="nav-link text-danger">
+              <i class="bi bi-box-arrow-right"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 col-lg-10 px-4">
+        <div class="row g-4">
+          <!-- Statistics Section -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Total Users</h5>
+                <p class="card-text fs-3 fw-bold">1,250</p>
+                <a href="/admin/users" class="btn btn-primary btn-sm">View Users</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bookings</h5>
+                <p class="card-text fs-3 fw-bold">350</p>
+                <a href="/admin/bookings" class="btn btn-success btn-sm">Manage Bookings</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Monthly Revenue</h5>
+                <p class="card-text fs-3 fw-bold">$15,500</p>
+                <a href="/admin/reports" class="btn btn-warning btn-sm">View Reports</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reports Section -->
+        <div class="mt-5">
+          <h4 class="text-secondary">Recent Activities</h4>
+          <table class="table table-striped table-hover mt-3">
+            <thead class="table-primary">
+              <tr>
+                <th>#</th>
+                <th>Activity</th>
+                <th>Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>User John Doe added a new booking</td>
+                <td>10:30 AM</td>
+                <td><span class="badge bg-success">Completed</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Admin updated pricing structure</td>
+                <td>9:15 AM</td>
+                <td><span class="badge bg-warning">Pending</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>System generated monthly report</td>
+                <td>8:00 AM</td>
+                <td><span class="badge bg-info">Processed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>

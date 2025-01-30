@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Reservation System</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Effortless Train Travel, Book Now!</h1>
+      <p>Find trains, book tickets, and plan your journey with ease.</p>
+      <a href="#search-bar" class="cta-button">Find Trains Now</a>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <section id="search-bar" class="search-bar">
+    <h2>Search Trains</h2>
+    <form action="/search" method="GET">
+      <input type="text" name="origin" placeholder="Origin Station" required>
+      <input type="text" name="destination" placeholder="Destination Station" required>
+      <input type="date" name="date" required>
+      <select name="class">
+        <option value="AC">AC</option>
+        <option value="Sleeper">Sleeper</option>
+        <option value="General">General</option>
+      </select>
+      <input type="number" name="passengers" placeholder="No. of Passengers (Optional)">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section class="featured-destinations">
+    <h2>Featured Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <img src="destination1.jpg" alt="Destination 1">
+        <h3>Destination 1</h3>
+        <p>Discover beautiful places on your journey.</p>
+        <a href="#">Find Trains</a>
+      </div>
+      <div class="destination-card">
+        <img src="destination2.jpg" alt="Destination 2">
+        <h3>Destination 2</h3>
+        <p>Experience comfort and convenience.</p>
+        <a href="#">Find Trains</a>
+      </div>
+      <div class="destination-card">
+        <img src="destination3.jpg" alt="Destination 3">
+        <h3>Destination 3</h3>
+        <p>Embark on scenic railway journeys.</p>
+        <a href="#">Find Trains</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features & Benefits -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <i class="icon">🔄</i>
+        <h3>Easy Booking</h3>
+        <p>Quick and simple ticket booking process.</p>
+      </div>
+      <div class="feature">
+        <i class="icon">💳</i>
+        <h3>Secure Payments</h3>
+        <p>Safe and secure payment options for all bookings.</p>
+      </div>
+      <div class="feature">
+        <i class="icon">📞</i>
+        <h3>24/7 Support</h3>
+        <p>Always here to help, anytime you need us.</p>
+      </div>
+      <div class="feature">
+        <i class="icon">📜</i>
+        <h3>PNR Status</h3>
+        <p>Check your ticket status anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & Announcements -->
+  <section class="news">
+    <h2>Latest News & Announcements</h2>
+    <div class="news-ticker">
+      <div class="news-item">
+        <p>Special discount on tickets for senior citizens!</p>
+      </div>
+      <div class="news-item">
+        <p>New express train launched for City A to City B.</p>
+      </div>
+      <div class="news-item">
+        <p>Plan your summer holidays with early bookings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"The best way to travel across the country. Easy and reliable!"</p>
+        <h4>- John Doe</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Booking tickets has never been this easy. Highly recommend!"</p>
+        <h4>- Jane Smith</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="company-info">
+        <h3>Railway Reservation System</h3>
+        <p>About Us | Contact Us | Careers</p>
+      </div>
+      <div class="legal-policy">
+        <p>Terms & Conditions | Privacy Policy</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="icon">🌐</i> Facebook</a>
+        <a href="#"><i class="icon">🌐</i> Twitter</a>
+        <a href="#"><i class="icon">🌐</i> Instagram</a>
+      </div>
+    </div>
+    <p>&copy; 2025 Railway Reservation System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
